@@ -1,14 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
   --background: #202125;
   --text-color: #fbffec;
   --text-color-secondary: #999b92;
-  --point-color: #d3e77c;
+  --highlight-color: #d3e77c;
+
+  --font-size-title: 62px;
+  --font-size-subtitle: 20px;
+  --font-size-body: 12px;
 }
 
 html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
+  background-color: var(--background);
+  color: var(--text-color);
 }
 
 * {

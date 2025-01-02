@@ -10,6 +10,10 @@ module.exports = {
         suit: ["var(--font-suit)"],
         suitBold: ["var(--font-suit-bold)"],
       },
+      colors: {
+        "color-main": "var(--text-color)",
+        "color-secondary": "var(--text-color-secondary)",
+      },
     },
   },
   plugins: [],

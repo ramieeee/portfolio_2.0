@@ -3,7 +3,7 @@ import MainScreen from "@/components/screens/MainScreen";
 
 export default function Home() {
   return (
-    <div className={styles.page}>
+    <div className="w-full flex justify-center">
       <MainScreen />
     </div>
   );

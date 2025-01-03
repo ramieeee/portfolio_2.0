@@ -12,7 +12,7 @@ export default function Template({
   className,
 }: TemplateProps) {
   return (
-    <div className={`w-full max-w-2xl h-screen py-28 ${className}`}>
+    <div className={`w-full max-w-4xl h-screen py-28 ${className} bg-white`}>
       {subtitle && (
         <div
           className={`flex
@@ -21,7 +21,7 @@ export default function Template({
           {subtitle}
         </div>
       )}
-      <div className="max-w-2xl">{children}</div>
+      <div className="w-full">{children}</div>
     </div>
   );
 }

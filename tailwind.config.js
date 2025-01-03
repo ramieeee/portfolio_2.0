@@ -10,6 +10,11 @@ module.exports = {
         suit: ["var(--font-suit)"],
         suitBold: ["var(--font-suit-bold)"],
       },
+      fontSize: {
+        "size-title": ["var(--font-size-title)"],
+        "size-subtitle": ["var(--font-size-subtitle)"],
+        "size-body": ["var(--font-size-body)"],
+      },
       colors: {
         "color-main": "var(--text-color)",
         "color-secondary": "var(--text-color-secondary)",

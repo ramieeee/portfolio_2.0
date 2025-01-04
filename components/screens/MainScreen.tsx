@@ -1,6 +1,11 @@
 import Template from "@/components/Template";
 import Image from "next/image";
+import Link from "next/link";
+
+// photos and logos
 import MyPhoto from "@/assets/myPhoto.png";
+import GithubLogo from "@/assets/githubLogo.svg";
+import LinkedinLogo from "@/assets/linkedinLogo.svg";
 
 export default function MainScreen() {
   return (
@@ -32,9 +37,15 @@ export default function MainScreen() {
             </div>
             {/* 아이콘들 */}
             <div className="flex flex-row gap-3 justify-end">
-              <div className="w-10 h-10 bg-[#D3E77C]"></div>
-              <div className="w-10 h-10 bg-[#D3E77C]"></div>
-              <div className="w-10 h-10 bg-[#D3E77C]"></div>
+              <Link
+                href="https://www.linkedin.com/in/ramieeee"
+                target="__blank"
+              >
+                <Image src={LinkedinLogo} alt="" width={28} />
+              </Link>
+              <Link href="https://github.com/ramieeee" target="__blank">
+                <Image src={GithubLogo} alt="" width={20} />
+              </Link>
             </div>
           </div>
           <div className="flex w-1/2 h-full items-end">

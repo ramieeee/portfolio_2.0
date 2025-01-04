@@ -9,7 +9,7 @@ import LinkedinLogo from "@/assets/linkedinLogo.svg";
 
 export default function MainScreen() {
   return (
-    <Template>
+    <Template className="h-screen">
       <div className="flex flex-col gap-20 w-full">
         <div className="flex flex-row h-[320px] gap-6">
           <div className="w-1/2 flex flex-col gap-3 h-full justify-end">
@@ -66,7 +66,7 @@ export default function MainScreen() {
 
         {/* 아래 quatation */}
         <div className="flex flex-col w-full items-center">
-          <div className="flex flex-col w-2/3">
+          <div className="flex flex-col w-7/12">
             <div className="font-suitBold text-color-main text-size-subtitle align-middle">
               " The most dangerous phrase in the language is, 'We've always done
               it this way.' "

@@ -12,6 +12,7 @@ module.exports = {
       },
       fontSize: {
         "size-title": ["var(--font-size-title)"],
+        "size-screenTitle": ["var(--font-size-screenTitle)"],
         "size-subtitle": ["var(--font-size-subtitle)"],
         "size-body": ["var(--font-size-body)"],
       },

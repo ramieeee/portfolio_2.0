@@ -12,11 +12,15 @@ export default function Template({
   className,
 }: TemplateProps) {
   return (
-    <div className={`w-full max-w-4xl h-screen py-28 ${className}`}>
+    <div className={`w-full max-w-4xl py-28 ${className}`}>
       {subtitle && (
         <div
           className={`flex
-            justify-${subTitlePosition === "right" ? "end" : "start"}`}
+            justify-${subTitlePosition === "right" ? "end" : "start"}
+            text-size-screenTitle
+            font-suitBold
+            text-color-main
+            `}
         >
           {subtitle}
         </div>

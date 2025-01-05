@@ -1,4 +1,7 @@
-export default function TimelineCard() {
+// types
+import { CareerDataType } from "@/types/types";
+
+export default function TimelineCard(careerData: CareerDataType) {
   return (
     <div className="flex flex-row">
       {/* number part */}

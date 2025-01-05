@@ -1,9 +1,21 @@
+"use client";
 import Template from "@/components/organisms/Template";
+import { CareerDataType } from "@/types/types";
 
-export default function CareerScreen() {
+interface ICareerScreen {
+  careerData: CareerDataType[];
+}
+
+export default function CareerScreen({ careerData }: ICareerScreen) {
   return (
     <Template subtitle="Career" className="">
-      <div></div>
+      {careerData.map((career, _) => {
+        return (
+          <div key={career.id}>
+            <></>
+          </div>
+        );
+      })}
     </Template>
   );
 }

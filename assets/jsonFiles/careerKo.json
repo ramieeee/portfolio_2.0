@@ -1,5 +1,6 @@
 [
   {
+    "id": 7,
     "company": {
       "name": "이지팜",
       "position": "AI 엔지니어",
@@ -25,6 +26,7 @@
     }
   },
   {
+    "id": 6,
     "company": {
       "name": "강원대학교 산학협력단",
       "position": "AI 연구원",
@@ -50,6 +52,7 @@
     }
   },
   {
+    "id": 5,
     "company": {
       "name": "에르하",
       "position": "대표",
@@ -75,6 +78,7 @@
     }
   },
   {
+    "id": 4,
     "company": {
       "name": "티맥스소프트",
       "position": "프론트 소프트웨어 엔지니어",
@@ -102,6 +106,7 @@
     }
   },
   {
+    "id": 3,
     "company": {
       "name": "LG 화학",
       "position": "Sales Manager",
@@ -127,6 +132,7 @@
     }
   },
   {
+    "id": 2,
     "company": {
       "name": "Deutsche Osstem GmbH",
       "position": "Supervisor",
@@ -152,6 +158,7 @@
     }
   },
   {
+    "id": 1,
     "company": {
       "name": "한국윈텍",
       "position": "팀원",

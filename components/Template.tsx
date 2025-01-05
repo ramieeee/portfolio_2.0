@@ -12,7 +12,9 @@ export default function Template({
   className,
 }: TemplateProps) {
   return (
-    <div className={`w-full max-w-4xl py-28 ${className}`}>
+    <div
+      className={`w-full max-w-4xl py-28 ${className} px-4 sm:px-12 md:px-16 lg:px-20 xl:px-24`}
+    >
       {subtitle && (
         <div
           className={`flex
@@ -20,6 +22,7 @@ export default function Template({
             text-size-screenTitle
             font-suitBold
             text-color-main
+            w-full
             `}
         >
           {subtitle}

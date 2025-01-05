@@ -1,0 +1,80 @@
+[
+  {
+    "id": 3,
+    "university": {
+      "name": "숭실대학교",
+      "location": "서울"
+    },
+    "time": {
+      "from": {
+        "year": 2022,
+        "month": 9
+      },
+      "until": {
+        "now": false,
+        "year": 2025,
+        "month": 2
+      }
+    },
+    "education": {
+      "degree": "석사",
+      "status": "졸업",
+      "major": "인공지능",
+      "skills": ["LSTM", "MLP", "Deep Learning", "Feature Extraction"],
+      "paper": [
+        "이미지화된 텍스트의 픽셀 위치 좌표와 벡터 특징을 활용한 LSTM-MLP 기반 한글 혐오 표현 탐지"
+      ],
+      "description": "혐오 표현 탐지에 관한 주제로 논문 연구 진행. 텍스트를 이미지화한 특징과 벡터화한 특징으로 멀티모달리티를 활용하여 LSTM-MLP 모델을 학습하여 혐오 표현 탐지"
+    }
+  },
+  {
+    "id": 2,
+    "university": {
+      "name": "성공회대학교",
+      "location": "Baguio, Philippines"
+    },
+    "time": {
+      "from": {
+        "year": 2012,
+        "month": 2
+      },
+      "until": {
+        "now": false,
+        "year": 2016,
+        "month": 3
+      }
+    },
+    "education": {
+      "degree": "학사",
+      "status": "졸업",
+      "major": "B.A. in English",
+      "skills": [],
+      "description": "영어학과 3학년 편입 후 졸업"
+    }
+  },
+  {
+    "id": 1,
+    "university": {
+      "name": "Saint Louis University",
+      "location": "Baguio, Philippines"
+    },
+    "time": {
+      "from": {
+        "year": 2009,
+        "month": 6
+      },
+      "until": {
+        "now": false,
+        "year": 2011,
+        "month": 4
+      }
+    },
+    "education": {
+      "degree": "학사",
+      "status": "편입",
+      "major": "B.A. in English",
+      "skills": [],
+      "description": "영어학 전공. 2년 과정 수료 후 한국으로 편입"
+    }
+  }
+]

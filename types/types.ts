@@ -24,3 +24,29 @@ export type CareerDataType = {
     description: string;
   };
 };
+
+export type EducationDataType = {
+  id: number;
+  university: {
+    name: string;
+    location: string;
+  };
+  time: {
+    from: {
+      year: number;
+      month: number;
+    };
+    until: {
+      now: boolean;
+      year: number;
+      month: number;
+    };
+  };
+  education: {
+    degree: string;
+    status: string;
+    major: string;
+    skills: [];
+    description: string;
+  };
+};

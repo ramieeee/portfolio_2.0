@@ -22,7 +22,7 @@
     "career": {
       "role": "LLM agent 및 체인 구축",
       "skills": ["LLM", "Langchain", "Milvus", "Apache Atlas"],
-      "description": "농협에서 사용될 LLM 체인 모델을 구축하였습니다. Langchainr과 Milvus를 사용하여 RAG 모델을 구축하였습니다."
+      "description": "농협에서 사용될 LLM 체인 모델을 구축하였습니다. Langchain과 Milvus를 사용하여 RAG 모델을 구축하였습니다."
     }
   },
   {

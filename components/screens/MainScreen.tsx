@@ -9,7 +9,7 @@ import LinkedinLogo from "@/assets/linkedinLogo.svg";
 
 export default function MainScreen() {
   return (
-    <Template className="h-screen">
+    <Template className="h-screen flex items-center">
       <div className="flex flex-col gap-20 w-full">
         <div className="flex flex-row h-[320px] gap-6">
           <div className="w-1/2 flex flex-col gap-3 h-full justify-end">

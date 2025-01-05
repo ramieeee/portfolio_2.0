@@ -27,18 +27,31 @@ export default function EducationTimelineCard({
         : setEndMonth(educationData.time.until.month.toString());
     }
   }, [educationData]);
+
   return (
-    <div className="flex flex-row w-full">
-      {/* number part */}
-      <div className="flex w-1/5 text-right flex-col">
-        <div className="text-size-subtitle font-suitBold text-color-main">
-          {`${educationData.time.from.year}.${startMonth} -`}
+    <div className="flex flex-row w-full pr-6">
+      {/* text part */}
+      <div className="flex flex-col w-3/5 gap-4 text-right">
+        <div className="text-size-subtitle font-suitBold text-color-highlight">
+          {educationData.university.name}
         </div>
-        <div className="text-size-subtitle folt-suitBold text-color-main">
-          {educationData.time.until.now === false
-            ? educationData.time.until.year + "."
-            : ""}
-          {endMonth}
+        <div>
+          <div className="text-size-body font-suit text-color-secondary">
+            {educationData.university.location}
+          </div>
+        </div>
+        {educationData.education.skills.length > 0 ? (
+          <div className="flex flex-row gap-3 text-size-body font-suit text-color-main justify-end">
+            <div className="w-8">기술:</div>
+            <div className="flex flex-row gap-2 text-size-body font-suit text-color-main">
+              {educationData.education.skills.map((skill, idx) => {
+                return <div key={`${skill}-${idx}`}>{skill}</div>;
+              })}
+            </div>
+          </div>
+        ) : null}
+        <div className="text-size-body font-suit text-color-main">
+          {educationData.education.description}
         </div>
       </div>
 
@@ -54,28 +67,16 @@ export default function EducationTimelineCard({
         />
       </div>
 
-      {/* text part */}
-      <div className="flex flex-col w-3/5 gap-4">
-        <div className="text-size-subtitle font-suitBold text-color-highlight">
-          {educationData.university.name}
+      {/* number part */}
+      <div className="flex w-2/12 text-right flex-col">
+        <div className="text-size-subtitle font-suitBold text-color-main">
+          {`${educationData.time.from.year}.${startMonth} -`}
         </div>
-        <div>
-          <div className="text-size-body font-suit text-color-secondary">
-            {educationData.university.location}
-          </div>
-        </div>
-        <div className="flex flex-row gap-3 text-size-body font-suit text-color-main">
-          {educationData.education.skills.length > 0 ? (
-            <div className="w-8">기술:</div>
-          ) : null}
-          <div className="flex flex-row gap-2 text-size-body font-suit text-color-main">
-            {educationData.education.skills.map((skill, idx) => {
-              return <div key={`${skill}-${idx}`}>{skill}</div>;
-            })}
-          </div>
-        </div>
-        <div className="text-size-body font-suit text-color-main">
-          {educationData.education.description}
+        <div className="text-size-subtitle folt-suitBold text-color-main">
+          {educationData.time.until.now === false
+            ? educationData.time.until.year + "."
+            : ""}
+          {endMonth}
         </div>
       </div>
     </div>

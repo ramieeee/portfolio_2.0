@@ -23,6 +23,7 @@ export default function Template({
             font-suitBold
             text-color-main
             w-full
+            mb-14
             `}
         >
           {subtitle}

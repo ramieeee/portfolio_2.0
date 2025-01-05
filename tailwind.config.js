@@ -6,6 +6,7 @@ module.exports = {
   ],
   theme: {
     extend: {
+      backgroundColor: {},
       fontFamily: {
         suit: ["var(--font-suit)"],
         suitBold: ["var(--font-suit-bold)"],
@@ -19,6 +20,7 @@ module.exports = {
       colors: {
         "color-main": "var(--text-color)",
         "color-secondary": "var(--text-color-secondary)",
+        "color-highlight": "var(--highlight-color)",
       },
     },
   },

@@ -49,7 +49,7 @@ export default function CareerTimelineCard({
         {/* line */}
         <div
           className={`absolute w-[2px] ${
-            isLast ? "h-0" : "h-[180%]"
+            isLast ? "h-0" : "h-[160%]"
           } bg-color-main left-1/2 -translate-x-1/2`}
         />
       </div>
@@ -67,16 +67,16 @@ export default function CareerTimelineCard({
             {careerData.career.role}
           </div>
         </div>
-        <div className="flex flex-row gap-3 text-size-body font-suit text-color-main">
-          {careerData.career.skills.length > 0 ? (
+        {careerData.career.skills.length > 0 ? (
+          <div className="flex flex-row gap-3 text-size-body font-suit text-color-main">
             <div className="w-8">기술:</div>
-          ) : null}
-          <div className="flex flex-row gap-2 text-size-body font-suit text-color-main">
-            {careerData.career.skills.map((skill, idx) => {
-              return <div key={`${skill}-${idx}`}>{skill}</div>;
-            })}
+            <div className="flex flex-row gap-2 text-size-body font-suit text-color-main">
+              {careerData.career.skills.map((skill, idx) => {
+                return <div key={`${skill}-${idx}`}>{skill}</div>;
+              })}
+            </div>
           </div>
-        </div>
+        ) : null}
         <div className="text-size-body font-suit text-color-main">
           {careerData.career.description}
         </div>

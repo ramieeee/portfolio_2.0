@@ -62,7 +62,7 @@ export default function EducationTimelineCard({
         {/* line */}
         <div
           className={`absolute w-[2px] ${
-            isLast ? "h-0" : "h-[180%]"
+            isLast ? "h-0" : "h-[190%]"
           } bg-color-main left-1/2 -translate-x-1/2`}
         />
       </div>

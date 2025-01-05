@@ -1,0 +1,179 @@
+[
+  {
+    "company": {
+      "name": "이지팜",
+      "position": "AI 엔지니어",
+      "location": "서울 양재"
+    },
+    "time": {
+      "from": {
+        "year": 2024,
+        "month": 10,
+        "day": 7
+      },
+      "until": {
+        "now": true,
+        "year": 2024,
+        "month": 10,
+        "day": 7
+      }
+    },
+    "career": {
+      "role": "LLM agent 및 체인 구축",
+      "skills": ["LLM", "Langchain", "Milvus", "Apache Atlas"],
+      "description": "농협에서 사용될 LLM 체인 모델을 구축하였습니다. Langchainrㅘ Milvus를 사용하여 RAG 모델을 구축하였습니다."
+    }
+  },
+  {
+    "company": {
+      "name": "강원대학교 산학협력단",
+      "position": "AI 연구원",
+      "location": "서울대병원 혜화, 서울"
+    },
+    "time": {
+      "from": {
+        "year": 2024,
+        "month": 7,
+        "day": 22
+      },
+      "until": {
+        "now": false,
+        "year": 2024,
+        "month": 10,
+        "day": 7
+      }
+    },
+    "career": {
+      "role": "치매 탐지 인공지능 모델 기획",
+      "skills": ["CNN", "LSTM"],
+      "description": "치매 여부를 판별하기 위한 모델을 기획하였습니다. 기존 연구들에서 알고리즘을 파악하고 모델을 설계하여 탐지 모델 아키텍처를 제안 하였습니다."
+    }
+  },
+  {
+    "company": {
+      "name": "에르하",
+      "position": "대표",
+      "location": "서울"
+    },
+    "time": {
+      "from": {
+        "year": 2023,
+        "month": 11,
+        "day": 27
+      },
+      "until": {
+        "now": false,
+        "year": 2024,
+        "month": 7,
+        "day": 21
+      }
+    },
+    "career": {
+      "role": "모바일 플랫폼 앱 서비스 개발",
+      "skills": ["React Native", "Typescript", "Firebase", "Figma"],
+      "description": "주변의 펍을 검색할 수 있는 모바일 어플리케이션을 기획하고 개발 하였습니다."
+    }
+  },
+  {
+    "company": {
+      "name": "티맥스소프트",
+      "position": "프론트 소프트웨어 엔지니어",
+      "location": "성남 분당"
+    },
+    "time": {
+      "from": {
+        "year": 2021,
+        "month": 12,
+        "day": 25
+      },
+      "until": {
+        "now": false,
+        "year": 2024,
+        "month": 1,
+        "day": 31
+      }
+    },
+    "career": {
+      "role": "툴 UI 개발 및 API 개발",
+      "skills": [
+        "React, React-query, Docker, Nextjs, Typescript, Python, Linux"
+      ],
+      "description": "인공지능을 위해 인공지능을 위해 인공지능을 위해 인공지능을 위해 인공지능을 위해 인공지능을 위해 \n인공지능을 위해 인공지능을 위해 인공지능을 위해 인공지능을 위해 인공지능을 위해 "
+    }
+  },
+  {
+    "company": {
+      "name": "LG 화학",
+      "position": "Sales Manager",
+      "location": "모스크바, 러시아"
+    },
+    "time": {
+      "from": {
+        "year": 2019,
+        "month": 6,
+        "day": 17
+      },
+      "until": {
+        "now": false,
+        "year": 2020,
+        "month": 12,
+        "day": 18
+      }
+    },
+    "career": {
+      "role": "무역 영업, 회계",
+      "skills": [],
+      "description": ""
+    }
+  },
+  {
+    "company": {
+      "name": "Deutsche Osstem GmbH",
+      "position": "Supervisor",
+      "location": "Eschborn, Germany"
+    },
+    "time": {
+      "from": {
+        "year": 2018,
+        "month": 2,
+        "day": 15
+      },
+      "until": {
+        "now": false,
+        "year": 2019,
+        "month": 4,
+        "day": 19
+      }
+    },
+    "career": {
+      "role": "해외영업 및 영업관리",
+      "skills": [],
+      "description": ""
+    }
+  },
+  {
+    "company": {
+      "name": "한국윈텍",
+      "position": "팀원",
+      "location": "경기도 광주"
+    },
+    "time": {
+      "from": {
+        "year": 2015,
+        "month": 4,
+        "day": 20
+      },
+      "until": {
+        "now": false,
+        "year": 2016,
+        "month": 8,
+        "day": 25
+      }
+    },
+    "career": {
+      "role": "해외영업",
+      "skills": [],
+      "description": ""
+    }
+  }
+]

@@ -4,7 +4,11 @@
     "title": "이미지화된 텍스트의 픽셀 위치 좌표와 벡터 특징을 활용한 LSTM-MLP 기반 한글 혐오 표현 탐지",
     "subtitle": "LSTM-MLP-based Korean Hate Speech Detection Using Pixel Coordinates of Image-Transformed Text and Vector Features",
     "category": "학위 논문",
-    "images": [],
+    "images": [
+      "projectImages/thesis/thesis1.png",
+      "projectImages/thesis/thesis2.png",
+      "projectImages/thesis/thesis3.png"
+    ],
     "organization": "숭실대학교",
     "time": {
       "from": {
@@ -55,9 +59,9 @@
     "subtitle": "",
     "category": "모바일 앱",
     "images": [
-      "projectImages/pubty/pubty1",
-      "projectImages/pubty/pubty2",
-      "projectImages/pubty/pubty3"
+      "projectImages/pubty/pubty1.svg",
+      "projectImages/pubty/pubty2.svg",
+      "projectImages/pubty/pubty3.svg"
     ],
     "organization": "에르하",
     "time": {
@@ -87,8 +91,8 @@
     "subtitle": "",
     "category": "웹서비스",
     "images": [
-      "projectImages/openFrameRefactor/openFrameRefactor1",
-      "projectImages/openFrameRefactor/openFrameRefactor2"
+      "projectImages/openFrameRefactor/openFrameRefactor1.png",
+      "projectImages/openFrameRefactor/openFrameRefactor2.png"
     ],
     "organization": "티맥스소프트",
     "time": {

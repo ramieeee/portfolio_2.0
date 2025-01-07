@@ -54,7 +54,11 @@
     "title": "Pubty",
     "subtitle": "",
     "category": "모바일 앱",
-    "images": [],
+    "images": [
+      "projectImages/pubty/pubty1",
+      "projectImages/pubty/pubty2",
+      "projectImages/pubty/pubty3"
+    ],
     "organization": "에르하",
     "time": {
       "from": {
@@ -79,10 +83,13 @@
   },
   {
     "id": 3,
-    "title": "SaaSification",
+    "title": "OpenFrame Refactor",
     "subtitle": "",
     "category": "웹서비스",
-    "images": [],
+    "images": [
+      "projectImages/openFrameRefactor/openFrameRefactor1",
+      "projectImages/openFrameRefactor/openFrameRefactor2"
+    ],
     "organization": "티맥스소프트",
     "time": {
       "from": {
@@ -97,7 +104,7 @@
         "day": 1
       }
     },
-    "description": "티맥스소프트 재직중 솔루선의 SaaS화를 위해 진행된 프로젝트입니다. Portal과 Console의 프론트엔드 개발을 담당하였습니다.",
+    "description": "티맥스소프트 재직중 솔루선의 SaaS화를 위해 진행된 프로젝트입니다. 해당 프로젝트에서 UI 개발을 담당하였습니다. Portal과 Console의 프론트엔드 개발을 담당하였습니다.",
     "skills": ["React", "Typescript"],
     "contribution": [
       "Saas Portal의 디자인 기획 및 Figma 구현",
@@ -154,11 +161,8 @@
       }
     },
     "description": "일본의 맥도날드 마이그레이션 프로젝트에 투입되어 코볼 소스를 분석하고 이슈가 있는 부분을 파악하는 역할을 담당하였습니다.",
-    "skills": ["COBOL"],
-    "contribution": [
-      "Saas Portal의 디자인 기획 및 Figma 구현",
-      "Portal과 Console 페이지의 UI개발 및 컴포넌트 개발"
-    ],
+    "skills": ["COBOL", "Linux"],
+    "contribution": ["코볼 소스코드 분석 및 이슈 발견 시 리포트"],
     "url": ""
   }
 ]

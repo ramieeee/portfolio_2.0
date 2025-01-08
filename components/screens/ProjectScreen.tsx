@@ -9,7 +9,7 @@ interface ProjectScreenProps {
 export default function ProjectScreen({ projectData }: ProjectScreenProps) {
   return (
     <Template subtitle="Projects">
-      <div className="gap-10 grid grid-cols-2">
+      <div className="gap-4 grid grid-cols-2">
         {projectData?.map((project, idx) => {
           return (
             <ProjectCard project={project} key={`${project.title}-${idx}`} />

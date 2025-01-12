@@ -10,6 +10,9 @@ import LinkedinLogo from "@/assets/linkedinLogo.svg";
 export default function MainScreen() {
   return (
     <Template className="h-screen flex items-center">
+      <div className="font-suitBold text-size-subtitle text-color-main fixed top-2 left-2 w-full h-full flex z-50">
+        페이지 개발중...
+      </div>
       <div className="flex flex-col gap-20 w-full">
         <div className="flex flex-row h-[320px] gap-6">
           <div className="w-1/2 flex flex-col gap-3 h-full justify-end">

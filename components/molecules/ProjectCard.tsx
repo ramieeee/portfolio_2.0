@@ -1,16 +1,31 @@
+"use client";
+
 import { ProjectDataType } from "@/types/types";
 import Image from "next/image";
 import PhotoSvg from "@/assets/photo.svg";
 import styles from "./ProjectCard.module.scss";
+import { useState } from "react";
+import ProjectModal from "./ProjectModal";
 
 interface ProjectCard {
   project: ProjectDataType;
 }
 
 export default function ProjectCard({ project }: ProjectCard) {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const handleCardClick = () => {
+    setIsModalOpen(true);
+  };
+
+  const handleModalClose = () => {
+    setIsModalOpen(false);
+  };
+
   return (
     <div
       className={`flex flex-col w-[350px] h-[500px] border-[1px] border-color-main cursor-pointer relative gap-6 overflow-hidden p-4`}
+      onClick={handleCardClick}
     >
       <div className={styles.glassLayer}></div>
       {/* img */}
@@ -54,6 +69,7 @@ export default function ProjectCard({ project }: ProjectCard) {
       <div className="flex font-suitBold text-size-body text-color-main">
         {project.description}
       </div>
+      {isModalOpen && <ProjectModal handleModalClose={handleModalClose} />}
     </div>
   );
 }

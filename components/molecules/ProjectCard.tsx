@@ -1,6 +1,7 @@
 import { ProjectDataType } from "@/types/types";
 import Image from "next/image";
 import PhotoSvg from "@/assets/photo.svg";
+import styles from "./ProjectCard.module.scss";
 
 interface ProjectCard {
   project: ProjectDataType;
@@ -9,9 +10,8 @@ interface ProjectCard {
 export default function ProjectCard({ project }: ProjectCard) {
   return (
     <div
-      className="flex flex-col w-[350px] h-[500px] p-2 border-[1px]
-      border-color-main cursor-pointer hover:bg-color-secondary
-      transition-all duration-200 overflow-hidden gap-6"
+      className={`flex flex-col w-[350px] h-[500px] p-4 border-[1px] border-color-main cursor-pointer overflow-hidden gap-6
+        ${styles.ProjectCard}`}
     >
       {/* img */}
       <div className="w-full h-[200px] flex justify-center items-center mx-auto">

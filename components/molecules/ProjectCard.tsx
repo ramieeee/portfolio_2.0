@@ -10,9 +10,9 @@ interface ProjectCard {
 export default function ProjectCard({ project }: ProjectCard) {
   return (
     <div
-      className={`flex flex-col w-[350px] h-[500px] p-4 border-[1px] border-color-main cursor-pointer overflow-hidden gap-6
-        ${styles.ProjectCard}`}
+      className={`flex flex-col w-[350px] h-[500px] border-[1px] border-color-main cursor-pointer relative gap-6 overflow-hidden p-4`}
     >
+      <div className={styles.glassLayer}></div>
       {/* img */}
       <div className="w-full h-[200px] flex justify-center items-center mx-auto">
         {project?.images.length > 0 ? (
@@ -39,7 +39,7 @@ export default function ProjectCard({ project }: ProjectCard) {
 
       {/* 제목, 기간 */}
       <div className="flex flex-col">
-        <div className="font-suitBold text-size-subtitle text-color-highlight">
+        <div className="font-suitBold text-size-subtitle text-color-highlight z-10">
           {project.title}
         </div>
         <div>

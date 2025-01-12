@@ -1,11 +1,8 @@
 "use client";
 import Template from "@/components/organisms/Template";
-import { CareerDataType, EducationDataType } from "@/types/types";
+import { EducationDataType } from "@/types/types";
 import EducationTimelineCard from "@/components/molecules/EducationTimelineCard";
 
-interface CareerScreenProps {
-  careerData: CareerDataType[];
-}
 interface EducationScreenProps {
   educationData: EducationDataType[];
 }

@@ -15,16 +15,22 @@ export default function CareerTimelineCard({
   const [endMonth, setEndMonth] = useState("0");
 
   useEffect(() => {
-    careerData && careerData.time.from.month < 10
-      ? setStartMonth("0" + careerData.time.from.month.toString())
-      : setStartMonth(careerData.time.from.month.toString());
+    if (careerData) {
+      if (careerData.time.from.month < 10) {
+        setStartMonth("0" + careerData.time.from.month.toString());
+      } else {
+        setStartMonth(careerData.time.from.month.toString());
+      }
 
-    if (careerData.time.until.now === true) {
-      setEndMonth("재직중");
-    } else {
-      careerData && careerData.time.until.month < 10
-        ? setEndMonth("0" + careerData.time.until.month.toString())
-        : setEndMonth(careerData.time.until.month.toString());
+      if (careerData.time.until.now === true) {
+        setEndMonth("재직중");
+      } else {
+        if (careerData.time.until.month < 10) {
+          setEndMonth("0" + careerData.time.until.month.toString());
+        } else {
+          setEndMonth(careerData.time.until.month.toString());
+        }
+      }
     }
   }, [careerData]);
   return (

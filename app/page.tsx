@@ -10,17 +10,17 @@ import {
   ProjectDataType,
 } from "@/types/types";
 
-export default function Home() {
-  const careerData: CareerDataType[] = require("@/assets/jsonFiles/careerKo.json");
-  const educationData: EducationDataType[] = require("@/assets/jsonFiles/educationKo.json");
-  const projectData: ProjectDataType[] = require("@/assets/jsonFiles/projectKo.json");
+import careerData from "@/assets/jsonFiles/careerKo.json";
+import educationData from "@/assets/jsonFiles/educationKo.json";
+import projectData from "@/assets/jsonFiles/projectKo.json";
 
+export default function Home() {
   return (
     <div className="w-full flex items-center flex-col">
       <MainScreen />
-      <CareerScreen careerData={careerData} />
-      <EducationScreen educationData={educationData} />
-      <ProjectScreen projectData={projectData} />
+      <CareerScreen careerData={careerData as CareerDataType[]} />
+      <EducationScreen educationData={educationData as EducationDataType[]} />
+      <ProjectScreen projectData={projectData as ProjectDataType[]} />
     </div>
   );
 }

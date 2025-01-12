@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 // types
-import { CareerDataType, EducationDataType } from "@/types/types";
+import { EducationDataType } from "@/types/types";
 
 interface TimelineCardProps {
   educationData: EducationDataType;
@@ -15,16 +15,20 @@ export default function EducationTimelineCard({
   const [endMonth, setEndMonth] = useState("0");
 
   useEffect(() => {
-    educationData && educationData.time.from.month < 10
-      ? setStartMonth("0" + educationData.time.from.month.toString())
-      : setStartMonth(educationData.time.from.month.toString());
+    if (educationData.time.from.month < 10) {
+      setStartMonth("0" + educationData.time.from.month.toString());
+    } else {
+      setStartMonth(educationData.time.from.month.toString());
+    }
 
     if (educationData.time.until.now === true) {
       setEndMonth("재직중");
     } else {
-      educationData && educationData.time.until.month < 10
-        ? setEndMonth("0" + educationData.time.until.month.toString())
-        : setEndMonth(educationData.time.until.month.toString());
+      if (educationData.time.until.month < 10) {
+        setEndMonth("0" + educationData.time.until.month.toString());
+      } else {
+        setEndMonth(educationData.time.until.month.toString());
+      }
     }
   }, [educationData]);
 

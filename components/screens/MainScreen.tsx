@@ -71,8 +71,9 @@ export default function MainScreen() {
         <div className="flex flex-col w-full items-center">
           <div className="flex flex-col w-7/12">
             <div className="font-suitBold text-color-main text-size-subtitle align-middle">
-              " The most dangerous phrase in the language is, 'We've always done
-              it this way.' "
+              {
+                " The most dangerous phrase in the language is, 'We've always done it this way.' "
+              }
             </div>
             <div className="font-suitBold text-color-secondary text-size-subtitle text-right">
               by Grace Hopper

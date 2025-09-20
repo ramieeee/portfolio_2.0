@@ -24,12 +24,12 @@ export default function ProjectCard({ project }: ProjectCard) {
 
   return (
     <div
-      className={`flex flex-col w-[350px] h-[500px] border-[1px] border-color-main cursor-pointer relative gap-6 overflow-hidden p-4`}
+      className={`flex flex-col w-full max-w-[350px] h-[400px] sm:h-[500px] border-[1px] border-color-main cursor-pointer relative gap-4 sm:gap-6 overflow-hidden p-3 sm:p-4`}
       onClick={handleCardClick}
     >
       <div className={styles.glassLayer}></div>
       {/* img */}
-      <div className="w-full h-[200px] flex justify-center items-center mx-auto">
+      <div className="w-full h-[150px] sm:h-[200px] flex justify-center items-center mx-auto">
         {project?.images.length > 0 ? (
           <img
             src={`/${project?.images[0]}`}
@@ -54,23 +54,23 @@ export default function ProjectCard({ project }: ProjectCard) {
 
       {/* 제목, 기간 */}
       <div className="flex flex-col">
-        <div className="font-suitBold text-size-subtitle text-color-highlight z-10">
+        <div className="font-suitBold text-sm sm:text-size-subtitle text-color-highlight z-10 leading-tight">
           {project.title}
         </div>
-        <div>
-          <div className="font-suitBold text-size-body text-color-secondary">
+        <div className="mt-2">
+          <div className="font-suitBold text-xs sm:text-size-body text-color-secondary">
             {project.organization}
           </div>
-          <div className="font-suitBold text-size-body text-color-secondary">{`${project.time.from.year}.${project.time.from.year} - ${project.time.until.year}.${project.time.until.year}`}</div>
+          <div className="font-suitBold text-xs sm:text-size-body text-color-secondary">{`${project.time.from.year}.${project.time.from.year} - ${project.time.until.year}.${project.time.until.year}`}</div>
         </div>
       </div>
 
       {/* 설명 */}
       <div
-        className="font-suitBold text-size-body text-color-main"
+        className="font-suitBold text-xs sm:text-size-body text-color-main flex-1"
         style={{
           display: "-webkit-box",
-          WebkitLineClamp: 4,
+          WebkitLineClamp: 3,
           WebkitBoxOrient: "vertical",
           overflow: "hidden",
           textOverflow: "ellipsis",

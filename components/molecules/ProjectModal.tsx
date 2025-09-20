@@ -64,7 +64,7 @@ export default function ProjectModal({
       style={{ pointerEvents: "auto" }}
     >
       <div
-        className={`bg-white bg-opacity-20 backdrop-blur-lg border border-white border-opacity-30 rounded-lg shadow-xl p-8 max-w-2xl max-h-[80vh] overflow-y-auto transition-all duration-300 transform relative ${
+        className={`bg-white bg-opacity-20 backdrop-blur-lg border border-white border-opacity-30 rounded-lg shadow-xl p-4 sm:p-8 w-[95vw] sm:w-auto max-w-2xl max-h-[90vh] sm:max-h-[80vh] overflow-y-auto transition-all duration-300 transform relative ${
           isVisible ? "scale-100 opacity-100" : "scale-75 opacity-0"
         }`}
         onClick={handleInnerClick}
@@ -73,7 +73,7 @@ export default function ProjectModal({
         {/* X 닫기 버튼 */}
         <button
           onClick={handleClose}
-          className="absolute top-4 right-4 w-8 h-8 flex items-center justify-center bg-white bg-opacity-20 hover:bg-opacity-30 rounded-full transition-all duration-200 text-color-main hover:text-color-highlight"
+          className="absolute top-2 right-2 sm:top-4 sm:right-4 w-8 h-8 flex items-center justify-center bg-white bg-opacity-20 hover:bg-opacity-30 rounded-full transition-all duration-200 text-color-main hover:text-color-highlight"
         >
           <svg
             width="16"
@@ -95,7 +95,7 @@ export default function ProjectModal({
           }`}
         >
           {/* 이미지 섹션 */}
-          <div className="w-full h-[300px] flex justify-center items-center mx-auto mb-6">
+          <div className="w-full h-[200px] sm:h-[300px] flex justify-center items-center mx-auto mb-4 sm:mb-6">
             {project?.images.length > 0 ? (
               <img
                 src={`/${project?.images[0]}`}
@@ -113,20 +113,20 @@ export default function ProjectModal({
           </div>
 
           {/* 제목 및 기본 정보 */}
-          <div className="mb-6">
-            <h2 className="font-suitBold text-2xl text-color-highlight mb-2">
+          <div className="mb-4 sm:mb-6">
+            <h2 className="font-suitBold text-lg sm:text-2xl text-color-highlight mb-2">
               {project.title}
             </h2>
             {project.subtitle && (
-              <h3 className="font-suitBold text-lg text-color-secondary mb-3">
+              <h3 className="font-suitBold text-base sm:text-lg text-color-secondary mb-3">
                 {project.subtitle}
               </h3>
             )}
             <div className="flex flex-col gap-2">
-              <div className="font-suitBold text-color-secondary">
+              <div className="font-suitBold text-sm sm:text-base text-color-secondary">
                 {project.organization} | {project.category}
               </div>
-              <div className="font-suitBold text-color-secondary">
+              <div className="font-suitBold text-sm sm:text-base text-color-secondary">
                 {`${project.time.from.year}.${String(
                   project.time.from.month
                 ).padStart(2, "0")}.${String(project.time.from.day).padStart(

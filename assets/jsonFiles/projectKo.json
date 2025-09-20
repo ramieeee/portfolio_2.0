@@ -63,7 +63,7 @@
       "projectImages/pubty/pubty2.svg",
       "projectImages/pubty/pubty3.svg"
     ],
-    "organization": "에르하",
+    "organization": "Personal",
     "time": {
       "from": {
         "year": 2024,
@@ -142,31 +142,6 @@
       "Saas Portal의 디자인 기획 및 Figma 구현",
       "Portal과 Console 페이지의 UI개발 및 컴포넌트 개발"
     ],
-    "url": ""
-  },
-  {
-    "id": 1,
-    "title": "Mcdonald's Japan",
-    "subtitle": "",
-    "category": "마이그레이션",
-    "images": [],
-    "organization": "티맥스소프트",
-    "time": {
-      "from": {
-        "year": 2023,
-        "month": 1,
-        "day": 2
-      },
-      "until": {
-        "now": false,
-        "year": 2023,
-        "month": 3,
-        "day": 2
-      }
-    },
-    "description": "일본의 맥도날드 마이그레이션 프로젝트에 투입되어 코볼 소스를 분석하고 이슈가 있는 부분을 파악하는 역할을 담당하였습니다.",
-    "skills": ["COBOL", "Linux"],
-    "contribution": ["코볼 소스코드 분석 및 이슈 발견 시 리포트"],
     "url": ""
   }
 ]

@@ -66,10 +66,21 @@ export default function ProjectCard({ project }: ProjectCard) {
       </div>
 
       {/* 설명 */}
-      <div className="flex font-suitBold text-size-body text-color-main">
+      <div
+        className="font-suitBold text-size-body text-color-main"
+        style={{
+          display: "-webkit-box",
+          WebkitLineClamp: 4,
+          WebkitBoxOrient: "vertical",
+          overflow: "hidden",
+          textOverflow: "ellipsis",
+        }}
+      >
         {project.description}
       </div>
-      {isModalOpen && <ProjectModal handleModalClose={handleModalClose} />}
+      {isModalOpen && (
+        <ProjectModal project={project} handleModalClose={handleModalClose} />
+      )}
     </div>
   );
 }

@@ -2,6 +2,7 @@
 import Template from "@/components/organisms/Template";
 import { EducationDataType } from "@/types/types";
 import EducationTimelineCard from "@/components/molecules/EducationTimelineCard";
+import { useEffect } from "react";
 
 interface EducationScreenProps {
   educationData: EducationDataType[];
@@ -18,6 +19,7 @@ export default function EducationScreen({
     >
       <div className="flex flex-col gap-20">
         {educationData.map((data, idx) => {
+          console.log(idx + 1 === educationData.length);
           return (
             <EducationTimelineCard
               educationData={data}

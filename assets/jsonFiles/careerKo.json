@@ -1,10 +1,10 @@
 [
   {
-    "id": 7,
+    "id": 8,
     "company": {
-      "name": "이지팜",
-      "position": "AI 엔지니어",
-      "location": "서울 양재"
+      "name": "Ecount",
+      "position": "AI Engineer",
+      "location": "Seoul, Korea"
     },
     "time": {
       "from": {
@@ -26,11 +26,37 @@
     }
   },
   {
+    "id": 7,
+    "company": {
+      "name": "Ezfarm",
+      "position": "AI Engineer",
+      "location": "Seoul, Korea"
+    },
+    "time": {
+      "from": {
+        "year": 2024,
+        "month": 10,
+        "day": 7
+      },
+      "until": {
+        "now": false,
+        "year": 2025,
+        "month": 2,
+        "day": 25
+      }
+    },
+    "career": {
+      "role": "LLM agent 및 체인 구축",
+      "skills": ["LLM", "Langchain", "Milvus", "Apache Atlas"],
+      "description": "농협에서 사용될 LLM 체인 모델을 구축하였습니다. Langchain과 Milvus를 사용하여 RAG 모델을 구축하였습니다. 또한 자연어를 활용하여 자동화된 LLM 모델을 통해 SQL query 생성하고 DB의 테이블 정보를 확인할 수 있는 모델을 구축하였습니다."
+    }
+  },
+  {
     "id": 6,
     "company": {
-      "name": "강원대학교 산학협력단",
-      "position": "AI 연구원",
-      "location": "서울대병원 혜화, 서울"
+      "name": "Gangnam Severance Hospital",
+      "position": "AI Researcher",
+      "location": "Seoul National University Hospital, Hyehwa, Seoul"
     },
     "time": {
       "from": {
@@ -52,37 +78,11 @@
     }
   },
   {
-    "id": 5,
-    "company": {
-      "name": "에르하",
-      "position": "대표",
-      "location": "서울"
-    },
-    "time": {
-      "from": {
-        "year": 2023,
-        "month": 11,
-        "day": 27
-      },
-      "until": {
-        "now": false,
-        "year": 2024,
-        "month": 7,
-        "day": 21
-      }
-    },
-    "career": {
-      "role": "모바일 플랫폼 앱 서비스 개발",
-      "skills": ["React Native", "Typescript", "Firebase", "Figma"],
-      "description": "주변의 펍을 필터링 하여 검색할 수 있는 모바일 어플리케이션 플랫폼을 기획하고 개발 하였습니다. 지도를 사용한 필터링 기능과 커뮤니티 기능을 통해서 검색과 소통 모두 가능하게 하는 어플리케이션 입니다."
-    }
-  },
-  {
     "id": 4,
     "company": {
-      "name": "티맥스소프트",
-      "position": "프론트 소프트웨어 엔지니어",
-      "location": "성남 분당"
+      "name": "TmaxSoft",
+      "position": "Software Engineer",
+      "location": "Seongnam Bundang"
     },
     "time": {
       "from": {
@@ -108,9 +108,9 @@
   {
     "id": 3,
     "company": {
-      "name": "LG 화학",
+      "name": "LG Chem Moscow",
       "position": "Sales Manager",
-      "location": "모스크바, 러시아"
+      "location": "Moscow, Russia"
     },
     "time": {
       "from": {
@@ -155,32 +155,6 @@
       "role": "해외영업 및 영업관리",
       "skills": [],
       "description": "동유럽의 거래처들을 담당하여 해당 국가에 직접 영업을 뛰러 다니며 딜러들을 발굴하고 사업을 키워나갔습니다. 몰도바, 조지아, 아르메니아, 알바니아 등의 국가에서 다양한 신규 거래처를 확보하여 매출 증가에 기여하였습니다."
-    }
-  },
-  {
-    "id": 1,
-    "company": {
-      "name": "한국윈텍",
-      "position": "팀원",
-      "location": "경기도 광주"
-    },
-    "time": {
-      "from": {
-        "year": 2015,
-        "month": 4,
-        "day": 20
-      },
-      "until": {
-        "now": false,
-        "year": 2016,
-        "month": 8,
-        "day": 25
-      }
-    },
-    "career": {
-      "role": "해외영업",
-      "skills": [],
-      "description": "미주 원단 수출을 담당하여 해당 국가의 바이어들과 소통하여 선적과 영업 전반적인 업무를 담당하였습니다."
     }
   }
 ]

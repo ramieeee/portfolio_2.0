@@ -1,6 +1,6 @@
 [
   {
-    "id": 3,
+    "id": 2,
     "university": {
       "name": "숭실대학교",
       "location": "서울"
@@ -28,7 +28,7 @@
     }
   },
   {
-    "id": 2,
+    "id": 1,
     "university": {
       "name": "성공회대학교",
       "location": "Baguio, Philippines"
@@ -50,31 +50,6 @@
       "major": "B.A. in English",
       "skills": [],
       "description": "영어학과 3학년 편입 후 졸업"
-    }
-  },
-  {
-    "id": 1,
-    "university": {
-      "name": "Saint Louis University",
-      "location": "Baguio, Philippines"
-    },
-    "time": {
-      "from": {
-        "year": 2009,
-        "month": 6
-      },
-      "until": {
-        "now": false,
-        "year": 2011,
-        "month": 4
-      }
-    },
-    "education": {
-      "degree": "학사",
-      "status": "편입",
-      "major": "B.A. in English",
-      "skills": [],
-      "description": "영어학 전공. 2년 과정 수료 후 한국으로 편입"
     }
   }
 ]

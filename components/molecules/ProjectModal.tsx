@@ -10,11 +10,21 @@ export default function ProjectModal({ handleModalClose }: ProjectModalProps) {
     // 모달이 열릴 때 스크롤 비활성화
     document.body.style.overflow = "hidden";
 
-    // 컴포넌트가 언마운트될 때 스크롤 활성화
+    // ESC 키 이벤트 리스너 추가
+    const handleEscKey = (event: KeyboardEvent) => {
+      if (event.key === "Escape") {
+        handleModalClose();
+      }
+    };
+
+    document.addEventListener("keydown", handleEscKey);
+
+    // 컴포넌트가 언마운트될 때 스크롤 활성화 및 이벤트 리스너 제거
     return () => {
       document.body.style.overflow = "auto";
+      document.removeEventListener("keydown", handleEscKey);
     };
-  }, []);
+  }, [handleModalClose]);
 
   // 내부 콘텐츠 클릭 이벤트 전파 차단
   const handleInnerClick = (event: React.MouseEvent) => {

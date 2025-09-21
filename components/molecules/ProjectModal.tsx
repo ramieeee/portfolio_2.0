@@ -64,7 +64,7 @@ export default function ProjectModal({
       style={{ pointerEvents: "auto" }}
     >
       <div
-        className={`bg-white bg-opacity-20 backdrop-blur-lg border border-white border-opacity-30 rounded-lg shadow-xl p-4 sm:p-8 w-[95vw] sm:w-auto max-w-2xl max-h-[90vh] sm:max-h-[80vh] overflow-y-auto transition-all duration-300 transform relative ${
+        className={`bg-white bg-opacity-30 backdrop-blur-lg border border-white border-opacity-40 rounded-lg shadow-xl p-4 sm:p-8 w-[95vw] sm:w-auto max-w-2xl max-h-[90vh] sm:max-h-[80vh] overflow-y-auto transition-all duration-300 transform relative ${
           isVisible ? "scale-100 opacity-100" : "scale-75 opacity-0"
         }`}
         onClick={handleInnerClick}
@@ -73,7 +73,7 @@ export default function ProjectModal({
         {/* X 닫기 버튼 */}
         <button
           onClick={handleClose}
-          className="absolute top-2 right-2 sm:top-4 sm:right-4 w-8 h-8 flex items-center justify-center bg-white bg-opacity-20 hover:bg-opacity-30 rounded-full transition-all duration-200 text-color-main hover:text-color-highlight"
+          className="absolute top-2 right-2 sm:top-4 sm:right-4 w-8 h-8 flex items-center justify-center bg-black bg-opacity-40 hover:bg-opacity-60 rounded-full transition-all duration-200 text-white shadow-lg backdrop-blur-sm"
         >
           <svg
             width="16"

@@ -25,9 +25,11 @@ export default function ProjectCard({ project }: ProjectCard) {
   return (
     <Fragment>
       <div
-        className={`flex flex-col w-full max-w-[350px] h-[400px] sm:h-[500px] bg-white bg-opacity-20 backdrop-blur-lg border border-white border-opacity-30 rounded-lg shadow-xl cursor-pointer relative gap-4 sm:gap-6 overflow-hidden p-3 sm:p-4 hover:bg-opacity-25 transition-all duration-300`}
+        className={`flex flex-col w-full max-w-[350px] h-[400px] sm:h-[500px] bg-white bg-opacity-10 backdrop-blur-lg border border-white border-opacity-30 rounded-lg shadow-xl cursor-pointer relative gap-4 sm:gap-6 overflow-hidden p-3 sm:p-4 group transition-all duration-300`}
         onClick={handleCardClick}
       >
+        {/* 프리즘 빛 효과 오버레이 */}
+        <div className="absolute inset-0 bg-gradient-to-br from-cyan-300/10 via-purple-300/8 to-pink-300/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-lg pointer-events-none"></div>
         {/* img */}
         <div className="w-full h-[150px] sm:h-[200px] flex justify-center items-center mx-auto rounded-lg overflow-hidden bg-white bg-opacity-10">
           {project?.images.length > 0 ? (

@@ -2,7 +2,6 @@
 import Template from "@/components/organisms/Template";
 import { EducationDataType } from "@/types/types";
 import EducationTimelineCard from "@/components/molecules/EducationTimelineCard";
-import { useEffect } from "react";
 
 interface EducationScreenProps {
   educationData: EducationDataType[];

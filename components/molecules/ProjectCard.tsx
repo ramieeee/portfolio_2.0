@@ -3,7 +3,6 @@
 import { ProjectDataType } from "@/types/types";
 import Image from "next/image";
 import PhotoSvg from "@/assets/photo.svg";
-import styles from "./ProjectCard.module.scss";
 import { useState, Fragment } from "react";
 import ProjectModal from "./ProjectModal";
 

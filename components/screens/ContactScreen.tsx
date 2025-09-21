@@ -8,12 +8,14 @@ export default function ContactScreen() {
         {/* 메인 메시지 */}
         <div className="text-center mb-8">
           <h2 className="font-suitBold text-2xl sm:text-3xl text-color-highlight mb-4">
-            Get In Touch
+            {"Get In Touch"}
           </h2>
           <p className="font-suitBold text-lg text-color-main leading-relaxed">
-            Whenever you feel like getting in touch with me, reach out to me.
+            {
+              "Whenever you feel like getting in touch with me, reach out to me."
+            }
             <br />
-            I'd love to hear from you and discuss new opportunities.
+            {"I'd love to hear from you and discuss new opportunities."}
           </p>
         </div>
 
@@ -24,13 +26,13 @@ export default function ContactScreen() {
             <div className="flex flex-col items-center text-center gap-4">
               <div>
                 <h3 className="font-suitBold text-lg text-color-highlight mb-2">
-                  Email
+                  {"Email"}
                 </h3>
                 <Link
                   href="mailto:rambotty@gmail.com"
                   className="font-suitBold text-color-main hover:text-color-highlight transition-colors duration-200"
                 >
-                  rambotty@gmail.com
+                  {"rambotty@gmail.com"}
                 </Link>
               </div>
             </div>
@@ -41,7 +43,7 @@ export default function ContactScreen() {
             <div className="flex flex-col items-center text-center gap-4">
               <div>
                 <h3 className="font-suitBold text-lg text-color-highlight mb-2">
-                  LinkedIn
+                  {"LinkedIn"}
                 </h3>
                 <Link
                   href="https://linkedin.com/in/ramieeee"
@@ -49,7 +51,7 @@ export default function ContactScreen() {
                   rel="noopener noreferrer"
                   className="font-suitBold text-color-main hover:text-color-highlight transition-colors duration-200"
                 >
-                  linkedin.com/in/ramieeee
+                  {"linkedin.com/in/ramieeee"}
                 </Link>
               </div>
             </div>
@@ -60,7 +62,7 @@ export default function ContactScreen() {
             <div className="flex flex-col items-center text-center gap-4">
               <div>
                 <h3 className="font-suitBold text-lg text-color-highlight mb-2">
-                  GitHub
+                  {"GitHub"}
                 </h3>
                 <Link
                   href="https://github.com/ramieeee"
@@ -68,7 +70,7 @@ export default function ContactScreen() {
                   rel="noopener noreferrer"
                   className="font-suitBold text-color-main hover:text-color-highlight transition-colors duration-200"
                 >
-                  github.com/ramieeee
+                  {"github.com/ramieeee"}
                 </Link>
               </div>
             </div>
@@ -79,7 +81,7 @@ export default function ContactScreen() {
             <div className="flex flex-col items-center text-center gap-4">
               <div>
                 <h3 className="font-suitBold text-lg text-color-highlight mb-2">
-                  Blog
+                  {"Blog"}
                 </h3>
                 <Link
                   href="https://ramieeee.hashnode.dev/"
@@ -87,7 +89,7 @@ export default function ContactScreen() {
                   rel="noopener noreferrer"
                   className="font-suitBold text-color-main hover:text-color-highlight transition-colors duration-200"
                 >
-                  ramieeee.hashnode.dev
+                  {"ramieeee.hashnode.dev"}
                 </Link>
               </div>
             </div>
@@ -97,7 +99,7 @@ export default function ContactScreen() {
         {/* 추가 메시지 */}
         <div className="text-center mt-8">
           <p className="font-suitBold text-color-secondary">
-            Looking forward to connecting with you!
+            {"Looking forward to connecting with you!"}
           </p>
         </div>
       </div>

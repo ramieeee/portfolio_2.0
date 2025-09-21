@@ -24,7 +24,7 @@ export default function ProjectCard({ project }: ProjectCard) {
   return (
     <Fragment>
       <div
-        className={`flex flex-col w-full max-w-[350px] h-[400px] sm:h-[500px] bg-white bg-opacity-10 backdrop-blur-lg border border-white border-opacity-30 rounded-lg shadow-xl cursor-pointer relative gap-4 sm:gap-6 overflow-hidden p-3 sm:p-4 group transition-all duration-300`}
+        className={`flex flex-col w-full max-w-[350px] h-[440px] sm:h-[440px] bg-white bg-opacity-10 backdrop-blur-lg border border-white border-opacity-30 rounded-lg shadow-xl cursor-pointer relative gap-4 sm:gap-6 overflow-hidden p-3 sm:p-4 group transition-all duration-300`}
         onClick={handleCardClick}
       >
         {/* 프리즘 빛 효과 오버레이 */}
@@ -64,7 +64,7 @@ export default function ProjectCard({ project }: ProjectCard) {
             <div className="font-suitBold text-xs sm:text-size-body text-white text-opacity-80">
               {project.organization}
             </div>
-            <div className="font-suitBold text-xs sm:text-size-body text-white text-opacity-80">{`${project.time.from.year}.${project.time.from.year} - ${project.time.until.year}.${project.time.until.year}`}</div>
+            <div className="font-suitBold text-xs sm:text-size-body text-white text-opacity-80">{`${project.time.from.year}.${project.time.from.month} - ${project.time.until.year}.${project.time.until.month}`}</div>
           </div>
         </div>
 

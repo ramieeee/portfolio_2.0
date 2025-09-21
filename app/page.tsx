@@ -13,6 +13,7 @@ import {
 import careerData from "@/assets/jsonFiles/careerKo.json";
 import educationData from "@/assets/jsonFiles/educationKo.json";
 import projectData from "@/assets/jsonFiles/projectKo.json";
+import ContactScreen from "@/components/screens/ContactScreen";
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
       <CareerScreen careerData={careerData as CareerDataType[]} />
       <EducationScreen educationData={educationData as EducationDataType[]} />
       <ProjectScreen projectData={projectData as ProjectDataType[]} />
+      <ContactScreen />
     </div>
   );
 }

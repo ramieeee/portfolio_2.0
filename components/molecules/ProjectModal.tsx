@@ -177,7 +177,7 @@ export default function ProjectModal({
                 {project.skills.map((skill, index) => (
                   <span
                     key={index}
-                    className="px-3 py-1 bg-color-highlight bg-opacity-20 text-color-highlight font-suitBold text-sm rounded-full"
+                    className="px-3 py-1 border-2 border-color-highlight text-color-highlight font-suitBold text-sm rounded-full bg-transparent"
                   >
                     {skill}
                   </span>

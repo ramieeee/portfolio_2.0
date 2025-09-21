@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import { ProjectDataType } from "@/types/types";
 import Image from "next/image";
-import PhotoSvg from "@/assets/photo.svg";
 
 interface ProjectModalProps {
   project: ProjectDataType;

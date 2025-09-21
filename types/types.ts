@@ -56,7 +56,7 @@ export type ProjectDataType = {
   title: string;
   subtitle: string;
   category: string;
-  images: string[];
+  thumbnail: string[];
   organization: string;
   time: {
     from: {
@@ -72,6 +72,7 @@ export type ProjectDataType = {
     };
   };
   description: string;
+  descriptionPartial: { image: string; text: string }[];
   skills: string[];
   contribution: string[];
   url: string;

@@ -95,9 +95,9 @@ export default function ProjectModal({
         >
           {/* 이미지 섹션 */}
           <div className="w-full h-[200px] sm:h-[300px] flex justify-center items-center mx-auto mb-4 sm:mb-6">
-            {project?.images.length > 0 ? (
+            {project?.thumbnail.length > 0 ? (
               <img
-                src={`/${project?.images[0]}`}
+                src={`/${project?.thumbnail[0]}`}
                 alt="project image"
                 className="w-full h-full object-cover object-top rounded-lg"
               />

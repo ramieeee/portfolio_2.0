@@ -31,9 +31,9 @@ export default function ProjectCard({ project }: ProjectCard) {
         <div className="absolute inset-0 bg-gradient-to-br from-cyan-300/10 via-purple-300/8 to-pink-300/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-lg pointer-events-none"></div>
         {/* img */}
         <div className="w-full h-[150px] sm:h-[200px] flex justify-center items-center mx-auto rounded-lg overflow-hidden bg-white bg-opacity-10">
-          {project?.images.length > 0 ? (
+          {project?.thumbnail.length > 0 ? (
             <img
-              src={`/${project?.images[0]}`}
+              src={`/${project?.thumbnail[0]}`}
               alt="image"
               className="w-full h-full object-cover object-top"
             />

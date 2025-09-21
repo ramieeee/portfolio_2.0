@@ -17,6 +17,7 @@ export default function CareerScreen({ careerData }: CareerScreenProps) {
               careerData={data}
               key={data.id}
               isLast={idx + 1 === careerData.length}
+              isFirst={idx === 0}
             />
           );
         })}

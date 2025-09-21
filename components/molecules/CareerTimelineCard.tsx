@@ -5,11 +5,13 @@ import { CareerDataType } from "@/types/types";
 interface TimelineCardProps {
   careerData: CareerDataType;
   isLast: boolean;
+  isFirst?: boolean;
 }
 
 export default function CareerTimelineCard({
   careerData,
   isLast,
+  isFirst = false,
 }: TimelineCardProps) {
   const [startMonth, setStartMonth] = useState("0");
   const [endMonth, setEndMonth] = useState("0");
@@ -23,7 +25,7 @@ export default function CareerTimelineCard({
       }
 
       if (careerData.time.until.now === true) {
-        setEndMonth("재직중");
+        setEndMonth("Current");
       } else {
         if (careerData.time.until.month < 10) {
           setEndMonth("0" + careerData.time.until.month.toString());
@@ -52,12 +54,14 @@ export default function CareerTimelineCard({
       <div className="flex w-1/5 justify-center pt-2 relative">
         {/* circle */}
         <div className="flex rounded-full w-4 h-4 bg-color-main z-10" />
-        {/* line */}
-        <div
-          className={`absolute w-[2px] ${
-            isLast ? "h-0" : "h-[160%]"
-          } bg-color-main left-1/2 -translate-x-1/2`}
-        />
+        {/* line going up */}
+        {!isFirst && (
+          <div className="absolute w-[2px] h-20 bg-color-main left-1/2 -translate-x-1/2 -top-16" />
+        )}
+        {/* line going down */}
+        {!isLast && (
+          <div className="absolute w-[2px] h-full bg-color-main left-1/2 -translate-x-1/2 top-4" />
+        )}
       </div>
 
       {/* text part */}
@@ -75,11 +79,9 @@ export default function CareerTimelineCard({
         </div>
         {careerData.career.skills.length > 0 ? (
           <div className="flex flex-row gap-3 text-size-body font-suit text-color-main">
-            <div className="w-8">기술:</div>
+            <div className="w-8">{`Skills:`}</div>
             <div className="flex flex-row gap-2 text-size-body font-suit text-color-main">
-              {careerData.career.skills.map((skill, idx) => {
-                return <div key={`${skill}-${idx}`}>{skill}</div>;
-              })}
+              {careerData.career.skills}
             </div>
           </div>
         ) : null}

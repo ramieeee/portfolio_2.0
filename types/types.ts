@@ -20,7 +20,7 @@ export type CareerDataType = {
   };
   career: {
     role: string;
-    skills: string[];
+    skills: string;
     description: string;
   };
 };
@@ -46,7 +46,7 @@ export type EducationDataType = {
     degree: string;
     status: string;
     major: string;
-    skills: [];
+    skills: string;
     description: string;
   };
 };

@@ -20,7 +20,7 @@
       "degree": "석사",
       "status": "졸업",
       "major": "인공지능",
-      "skills": ["LSTM", "MLP", "Deep Learning", "Feature Extraction"],
+      "skills": "LSTM, MLP, Deep Learning, Feature Extraction",
       "paper": [
         "이미지화된 텍스트의 픽셀 위치 좌표와 벡터 특징을 활용한 LSTM-MLP 기반 한글 혐오 표현 탐지"
       ],
@@ -48,7 +48,7 @@
       "degree": "학사",
       "status": "졸업",
       "major": "B.A. in English",
-      "skills": [],
+      "skills": "",
       "description": "영어학과 3학년 편입 후 졸업"
     }
   }

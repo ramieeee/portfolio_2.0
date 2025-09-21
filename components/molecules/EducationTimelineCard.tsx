@@ -5,11 +5,13 @@ import { EducationDataType } from "@/types/types";
 interface TimelineCardProps {
   educationData: EducationDataType;
   isLast: boolean;
+  isFirst?: boolean;
 }
 
 export default function EducationTimelineCard({
   educationData,
   isLast,
+  isFirst = false,
 }: TimelineCardProps) {
   const [startMonth, setStartMonth] = useState("0");
   const [endMonth, setEndMonth] = useState("0");
@@ -46,11 +48,9 @@ export default function EducationTimelineCard({
         </div>
         {educationData.education.skills.length > 0 ? (
           <div className="flex flex-row gap-3 text-size-body font-suit text-color-main justify-end">
-            <div className="w-8">기술:</div>
+            <div className="w-8">{`Skills:`}</div>
             <div className="flex flex-row gap-2 text-size-body font-suit text-color-main">
-              {educationData.education.skills.map((skill, idx) => {
-                return <div key={`${skill}-${idx}`}>{skill}</div>;
-              })}
+              {educationData.education.skills}
             </div>
           </div>
         ) : null}
@@ -63,12 +63,20 @@ export default function EducationTimelineCard({
       <div className="flex w-1/5 justify-center pt-2 relative">
         {/* circle */}
         <div className="flex rounded-full w-4 h-4 bg-color-main z-10" />
-        {/* line */}
-        <div
-          className={`absolute w-[2px] ${
-            isLast ? "h-0" : "h-[150%]"
-          } bg-color-main left-1/2 -translate-x-1/2`}
-        />
+        {/* line going up */}
+        {!isFirst && (
+          <div 
+            className="absolute h-20 bg-color-main left-1/2 -translate-x-1/2 -top-16" 
+            style={{ width: '2px' }}
+          />
+        )}
+        {/* line going down */}
+        {!isLast && (
+          <div 
+            className="absolute h-full bg-color-main left-1/2 -translate-x-1/2 top-4" 
+            style={{ width: '2px' }}
+          />
+        )}
       </div>
 
       {/* number part */}

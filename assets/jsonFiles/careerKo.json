@@ -8,8 +8,8 @@
     },
     "time": {
       "from": {
-        "year": 2024,
-        "month": 10,
+        "year": 2025,
+        "month": 5,
         "day": 7
       },
       "until": {
@@ -20,9 +20,9 @@
       }
     },
     "career": {
-      "role": "LLM agent 및 체인 구축",
-      "skills": ["LLM", "Langchain", "Milvus", "Apache Atlas"],
-      "description": "농협에서 사용될 LLM 체인 모델을 구축하였습니다. Langchain과 Milvus를 사용하여 RAG 모델을 구축하였습니다. 또한 자연어를 활용하여 자동화된 LLM 모델을 통해 SQL query 생성하고 DB의 테이블 정보를 확인할 수 있는 모델을 구축하였습니다."
+      "role": "Researching AI technologies and implementing into company products",
+      "skills": "LLM, vLLM, STT, RAG, Fine-tuning",
+      "description": "I am researching and implementing various AI technologies to enhance the company's products and services. This includes working with large language models (LLMs), vector databases, speech-to-text (STT) systems, retrieval-augmented generation (RAG) models, and fine-tuning techniques to optimize model performance for specific use cases."
     }
   },
   {
@@ -46,9 +46,9 @@
       }
     },
     "career": {
-      "role": "LLM agent 및 체인 구축",
-      "skills": ["LLM", "Langchain", "Milvus", "Apache Atlas"],
-      "description": "농협에서 사용될 LLM 체인 모델을 구축하였습니다. Langchain과 Milvus를 사용하여 RAG 모델을 구축하였습니다. 또한 자연어를 활용하여 자동화된 LLM 모델을 통해 SQL query 생성하고 DB의 테이블 정보를 확인할 수 있는 모델을 구축하였습니다."
+      "role": "LLM agent model development",
+      "skills": "LLM, Langchain, RAG, NLP-to-SQL, Milvus, ApacheAtlas",
+      "description": "Had LLM chain model development for NongHyup. Built RAG model using Langchain and Milvus. Also developed a model that can generate SQL queries and check table information in the database through an automated LLM model using natural language."
     }
   },
   {
@@ -72,9 +72,9 @@
       }
     },
     "career": {
-      "role": "치매 탐지 인공지능 모델 기획",
-      "skills": ["CNN", "LSTM"],
-      "description": "치매 여부를 판별하기 위한 모델을 기획하였습니다. 기존 연구들에서 알고리즘을 파악하고 모델을 설계하여 탐지 모델 아키텍처를 제안 하였습니다. 음성과 동영상, 그리고 스크립트 특징들을 활용하여 멀티모달 모델을 설계 하였습니다"
+      "role": "Dementia detection model research",
+      "skills": "CNN, LSTM",
+      "description": "Planned a model to determine the presence of dementia. Identified algorithms from existing research and designed the model, proposing a detection model architecture. Designed a multimodal model utilizing audio, video, and script features."
     }
   },
   {
@@ -98,11 +98,9 @@
       }
     },
     "career": {
-      "role": "툴 UI 개발 및 API 개발",
-      "skills": [
-        "React, React-query, Docker, Nextjs, Typescript, Python, Linux, COBOL"
-      ],
-      "description": "UI 개발을 주로 담당 하였습니다. Nextjs를 활용하여 프론트와 백엔드를 개발하고 Docker 컨테이너를 활용하여 서비스를 배포하였습니다. 또한 메인프레임 자산의 마이그레이션 프로젝트에 투입되어 COBOL 자산을 분석하며 에러와 이슈를 파악하는 업무를 수행하였습니다."
+      "role": "UI development",
+      "skills": "React, React-query, Docker, Nextjs, Typescript, Python, Linux",
+      "description": "In charge of UI development using Nextjs for front-end and back-end development, and deploying services using Docker containers."
     }
   },
   {
@@ -126,9 +124,9 @@
       }
     },
     "career": {
-      "role": "무역 영업, 회계",
-      "skills": [],
-      "description": "모스크바 지사에서 현지 거래처 영업을 담당 하였습니다. 러시아 및 CIS 국가들의 기존 파트너들을 방문하여 비즈니스를 더욱 발전시키고, 러시아 국영 에너지 기업과의 파트너쉽을 맺을 수 있도록 본사와의 중간 다리 역할을 하였습니다."
+      "role": "Sales",
+      "skills": "",
+      "description": "In charge of sales in Moscow. Developed business with existing partners in Russia and CIS countries, and acted as a bridge between the headquarters and local partners to establish partnerships with Russian state-owned energy companies."
     }
   },
   {
@@ -152,9 +150,9 @@
       }
     },
     "career": {
-      "role": "해외영업 및 영업관리",
-      "skills": [],
-      "description": "동유럽의 거래처들을 담당하여 해당 국가에 직접 영업을 뛰러 다니며 딜러들을 발굴하고 사업을 키워나갔습니다. 몰도바, 조지아, 아르메니아, 알바니아 등의 국가에서 다양한 신규 거래처를 확보하여 매출 증가에 기여하였습니다."
+      "role": "Sales",
+      "skills": "",
+      "description": "In charge of sales in Eastern Europe. Developed business by directly visiting local partners in each country, discovering dealers, and expanding the business. Secured various new partners in countries such as Moldova, Georgia, Armenia, and Albania, contributing to increased sales."
     }
   }
 ]

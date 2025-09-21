@@ -15,29 +15,29 @@ export default function MainScreen() {
           <div className="w-full sm:w-1/2 flex flex-col gap-3 h-full justify-center sm:justify-end order-2 sm:order-1">
             <div className="flex flex-row justify-center gap-2 sm:flex-col sm:justify-between sm:h-20">
               <div className="text-center sm:text-right font-suitBold text-xl sm:text-size-title text-color-main">
-                Ramhee
+                {"Ramhee"}
               </div>
               <div className="text-center sm:text-right font-suitBold text-xl sm:text-size-title text-color-main">
-                Yeon
+                {"Yeon"}
               </div>
             </div>
             <div className="flex flex-col text-center sm:text-right">
               <div className="font-suitBold text-base sm:text-size-subtitle text-color-main">
-                머신러닝 엔지니어,
+                {"AI Researcher and Engineer,"}
               </div>
               <div className="font-suitBold text-base sm:text-size-subtitle text-color-main">
-                인공지능 석학 전공
+                {"Major in AI, MSE"}
               </div>
             </div>
             <div className="flex flex-col text-center sm:text-right">
               <div className="font-suitBold text-sm sm:text-size-body text-color-secondary">
-                매 순간 변화하는 IT 세계에서 새 기술을 익히고
+                {"It always excites me to learn new technologies"}
               </div>
               <div className="font-suitBold text-sm sm:text-size-body text-color-secondary">
-                새로운 아이디어를 통해 나의 방식대로 프로그래밍
+                {"I enjoy reading researches and implementing them"}
               </div>
               <div className="font-suitBold text-sm sm:text-size-body text-color-secondary">
-                하는 것은 제게 언제나 기쁨을 느끼게 해줍니다.
+                {"Currently I am fascinated by LLM and STT"}
               </div>
             </div>
             {/* 아이콘들 */}

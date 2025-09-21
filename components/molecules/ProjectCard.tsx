@@ -32,10 +32,12 @@ export default function ProjectCard({ project }: ProjectCard) {
         {/* img */}
         <div className="w-full h-[150px] sm:h-[200px] flex justify-center items-center mx-auto rounded-lg overflow-hidden bg-white bg-opacity-10">
           {project?.thumbnail.length > 0 ? (
-            <img
+            <Image
               src={`/${project?.thumbnail[0]}`}
               alt="image"
               className="w-full h-full object-cover object-top"
+              width={400}
+              height={800}
             />
           ) : (
             <div className="flex flex-col justify-center items-center">
@@ -47,7 +49,7 @@ export default function ProjectCard({ project }: ProjectCard) {
                 style={{ width: "20%", height: "20%" }}
               />
               <div className="text-white font-suitBold opacity-80">
-                No image available
+                {"No image available"}
               </div>
             </div>
           )}

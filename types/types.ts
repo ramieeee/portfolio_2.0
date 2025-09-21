@@ -72,7 +72,7 @@ export type ProjectDataType = {
     };
   };
   description: string;
-  descriptionPartial: { image: string; text: string }[];
+  descriptionPartial: { image: string | null; text: string }[];
   skills: string[];
   contribution: string[];
   url: string;

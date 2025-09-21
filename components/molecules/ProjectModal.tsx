@@ -94,38 +94,33 @@ export default function ProjectModal({
           }`}
         >
           {/* 이미지 섹션 */}
-          <div className="w-full h-[200px] sm:h-[300px] flex justify-center items-center mx-auto mb-4 sm:mb-6">
+          <div className="w-full h-[auto] sm:h-[auto] flex justify-center items-center mx-auto mb-4 sm:mb-6">
             {project?.thumbnail.length > 0 ? (
-              <img
+              <Image
                 src={`/${project?.thumbnail[0]}`}
                 alt="project image"
                 className="w-full h-full object-cover object-top rounded-lg"
+                width={400}
+                height={800}
               />
-            ) : (
-              <div className="flex flex-col justify-center items-center w-full h-full bg-gray-100 rounded-lg">
-                <Image src={PhotoSvg} alt="No Image" width={80} height={80} />
-                <div className="text-color-main font-suitBold mt-4">
-                  No image available
-                </div>
-              </div>
-            )}
+            ) : null}
           </div>
 
           {/* 제목 및 기본 정보 */}
           <div className="mb-4 sm:mb-6">
-            <h2 className="font-suitBold text-lg sm:text-2xl text-color-highlight mb-2">
+            <div className="font-suitBold text-lg sm:text-size-subtitle text-color-highlight mb-2">
               {project.title}
-            </h2>
+            </div>
             {project.subtitle && (
-              <h3 className="font-suitBold text-base sm:text-lg text-color-secondary mb-3">
+              <div className="font-suitBold text-base sm:text-size-body text-color-secondary mb-3">
                 {project.subtitle}
-              </h3>
+              </div>
             )}
             <div className="flex flex-col gap-2">
-              <div className="font-suitBold text-sm sm:text-base text-color-secondary">
+              <div className="font-suitBold text-sm sm:text-size-body text-color-secondary">
                 {project.organization} | {project.category}
               </div>
-              <div className="font-suitBold text-sm sm:text-base text-color-secondary">
+              <div className="font-suitBold text-sm sm:text-size-body text-color-secondary">
                 {`${project.time.from.year}.${String(
                   project.time.from.month
                 ).padStart(2, "0")}.${String(project.time.from.day).padStart(
@@ -146,32 +141,52 @@ export default function ProjectModal({
 
           {/* 설명 */}
           <div className="mb-6">
-            <h4 className="font-suitBold text-lg text-color-highlight mb-3">
-              프로젝트 설명
-            </h4>
-            <p className="font-suitBold text-color-main leading-relaxed whitespace-pre-line">
-              {project.description}
-            </p>
+            <div className="font-suitBold text-size-body text-color-highlight mb-3">
+              {"Project Description"}
+            </div>
+            {project.descriptionPartial &&
+            project.descriptionPartial.length > 0 ? (
+              project.descriptionPartial.map((part, index) => (
+                <div key={index} className="mb-14">
+                  <div className="font-suitBold text-size-body text-color-main leading-relaxed whitespace-pre-line mb-4">
+                    {part.text}
+                  </div>
+                  {part.image && (
+                    <Image
+                      width={400}
+                      height={200}
+                      src={`/${part.image}`}
+                      alt={`project part ${index + 1}`}
+                      className="w-3/4 h-auto object-cover object-top rounded-lg mb-2 mx-auto"
+                    />
+                  )}
+                </div>
+              ))
+            ) : (
+              <div className="font-suitBold text-size-body text-color-main leading-relaxed whitespace-pre-line">
+                {project.description}
+              </div>
+            )}
           </div>
 
           {/* 기여도 */}
           {project.contribution && (
             <div className="mb-6">
-              <h4 className="font-suitBold text-lg text-color-highlight mb-3">
-                기여도
-              </h4>
-              <p className="font-suitBold text-color-main leading-relaxed">
+              <div className="font-suitBold text-size-body text-color-highlight mb-3">
+                {"기여도"}
+              </div>
+              <div className="font-suitBold text-size-body text-color-main leading-relaxed">
                 {project.contribution}
-              </p>
+              </div>
             </div>
           )}
 
           {/* 기술 스택 */}
           {project.skills && project.skills.length > 0 && (
             <div className="mb-6">
-              <h4 className="font-suitBold text-lg text-color-highlight mb-3">
-                기술 스택
-              </h4>
+              <div className="font-suitBold text-size-body text-color-highlight mb-3">
+                {"기술 스택"}
+              </div>
               <div className="flex flex-wrap gap-2">
                 {project.skills.map((skill, index) => (
                   <span
@@ -188,9 +203,9 @@ export default function ProjectModal({
           {/* URL */}
           {project.url && (
             <div className="mb-6">
-              <h4 className="font-suitBold text-lg text-color-highlight mb-3">
+              <div className="font-suitBold text-size-body text-color-highlight mb-3">
                 링크
-              </h4>
+              </div>
               <a
                 href={project.url}
                 target="_blank"

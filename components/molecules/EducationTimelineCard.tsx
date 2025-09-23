@@ -38,12 +38,19 @@ export default function EducationTimelineCard({
     <div className="flex flex-row w-full pr-6">
       {/* text part */}
       <div className="flex flex-col w-3/5 gap-4 text-right">
-        <div className="text-size-subtitle font-suitBold text-color-highlight">
-          {educationData.university.name}
+        <div className="flex flex-row justify-end gap">
+          <div className="text-size-subtitle font-suitBold text-color-highlight">
+            {educationData.university.name}
+          </div>
         </div>
         <div>
-          <div className="text-size-body font-suit text-color-secondary">
-            {educationData.university.location}
+          <div>
+            <div className="text-size-body font-suit text-color-secondary">
+              {`${educationData.education.degree} | ${educationData.university.location}`}
+            </div>
+            <div className="text-size-body font-suit text-color-secondary">
+              {educationData.education.major}
+            </div>
           </div>
         </div>
         {educationData.education.skills.length > 0 ? (
@@ -65,17 +72,11 @@ export default function EducationTimelineCard({
         <div className="flex rounded-full w-4 h-4 bg-color-main z-10" />
         {/* line going up */}
         {!isFirst && (
-          <div 
-            className="absolute h-20 bg-color-main left-1/2 -translate-x-1/2 -top-16" 
-            style={{ width: '2px' }}
-          />
+          <div className="absolute w-[2px] h-20 bg-color-main left-1/2 -translate-x-1/2 -top-16" />
         )}
         {/* line going down */}
         {!isLast && (
-          <div 
-            className="absolute h-full bg-color-main left-1/2 -translate-x-1/2 top-4" 
-            style={{ width: '2px' }}
-          />
+          <div className="absolute w-[2px] h-full bg-color-main left-1/2 -translate-x-1/2 top-4" />
         )}
       </div>
 

@@ -71,7 +71,7 @@ export default function CareerTimelineCard({
         </div>
         <div>
           <div className="text-size-body font-suit text-color-secondary">
-            {careerData.company.position}
+            {`${careerData.company.position} | ${careerData.company.location}`}
           </div>
           <div className="text-size-body font-suit text-color-secondary">
             {careerData.career.role}

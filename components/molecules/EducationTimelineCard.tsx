@@ -45,23 +45,23 @@ export default function EducationTimelineCard({
         </div>
         <div>
           <div>
-            <div className="text-size-body font-suit text-color-secondary">
+            <div className="font-suitBold text-size-body font-suit text-color-secondary">
               {`${educationData.education.degree} | ${educationData.university.location}`}
             </div>
-            <div className="text-size-body font-suit text-color-secondary">
+            <div className="font-suitBold text-size-body font-suit text-color-secondary">
               {educationData.education.major}
             </div>
           </div>
         </div>
         {educationData.education.skills.length > 0 ? (
-          <div className="flex flex-row gap-3 text-size-body font-suit text-color-main justify-end">
+          <div className="flex flex-row gap-3 font-suitBold text-size-body text-color-main justify-end">
             <div className="w-8">{`Skills:`}</div>
-            <div className="flex flex-row gap-2 text-size-body font-suit text-color-main">
+            <div className="flex flex-row gap-2 font-suitBold text-size-body text-color-main">
               {educationData.education.skills}
             </div>
           </div>
         ) : null}
-        <div className="text-size-body font-suit text-color-main">
+        <div className="text-size-body font-suitBold text-color-main">
           {educationData.education.description}
         </div>
       </div>

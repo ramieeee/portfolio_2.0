@@ -70,22 +70,22 @@ export default function CareerTimelineCard({
           {careerData.company.name}
         </div>
         <div>
-          <div className="text-size-body font-suit text-color-secondary">
+          <div className="font-suitBold text-size-body font-suit text-color-secondary">
             {`${careerData.company.position} | ${careerData.company.location}`}
           </div>
-          <div className="text-size-body font-suit text-color-secondary">
+          <div className="font-suitBold text-size-body font-suit text-color-secondary">
             {careerData.career.role}
           </div>
         </div>
         {careerData.career.skills.length > 0 ? (
-          <div className="flex flex-row gap-3 text-size-body font-suit text-color-main">
+          <div className="flex flex-row gap-3 font-suitBold text-size-body text-color-main">
             <div className="w-8">{`Skills:`}</div>
-            <div className="flex flex-row gap-2 text-size-body font-suit text-color-main">
+            <div className="flex flex-row gap-2 font-suitBold text-size-body text-color-main">
               {careerData.career.skills}
             </div>
           </div>
         ) : null}
-        <div className="text-size-body font-suit text-color-main">
+        <div className="text-size-body font-suitBold text-color-main">
           {careerData.career.description}
         </div>
       </div>

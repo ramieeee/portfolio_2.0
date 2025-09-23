@@ -48,7 +48,7 @@ export default function ProjectCard({ project }: ProjectCard) {
                 height={50}
                 style={{ width: "20%", height: "20%" }}
               />
-              <div className="text-white font-suitBold opacity-80">
+              <div className="font-suitBold text-white font-suitBold opacity-80">
                 {"No image available"}
               </div>
             </div>

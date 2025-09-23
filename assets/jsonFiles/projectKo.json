@@ -77,10 +77,17 @@
         "text": "It had a little problem in the model's accuracy, showing the phenomenon so called hallucination. General prompting not have seemed to be the solution, so I took a chance to implement a Named Entity Recognition (NER) method to improve the accuracy of the LLM model. By recognizing and extracting specific entities from the input text, the NER data helped to provide more structured and relevant information to the LLM, thereby reducing hallucination by 50-60% and improving overall performance."
       }
     ],
-    "skills": ["Langchain", "Typescript"],
+    "skills": [
+      "LangChain",
+      "Typescript",
+      "Python",
+      "FastAPI",
+      "Docker",
+      "Apache Atlas"
+    ],
     "contribution": [
-      "RAG LLM 모델 구축",
-      "자동화 LLM 모델 구축asfasdfasfasdfasdfasaf자동화 LLM 모델 구축asfasdfasfasdfasdfasaf자동화 LLM 모델 구축asfasdfasfasdfasdfasaf자동화 "
+      "Launched a RAG LLM prototype",
+      "Launched a Text-to-SQL LLM prototype"
     ],
     "url": ""
   },
@@ -108,8 +115,17 @@
         "day": 30
       }
     },
-    "description": "개인 취향의 펍 검색을 위한 모바일 플랫폼 어플리케이션입니다. 현재 아직 개발중입니다.",
-    "descriptionPartial": [{ "image": "", "text": "" }],
+    "description": "It is a pub searching mobile application, which allows you to customize filters to find pubs that suit your preferences. You can search for pubs based on various criteria such as location, ambiance, drink menu, and more. The app provides detailed information about each pub, including reviews and ratings from other users.",
+    "descriptionPartial": [
+      {
+        "image": "",
+        "text": "It is a pub searching mobile application, which allows you to customize filters to find pubs that suit your preferences. You can search for pubs based on various criteria such as location, ambiance, drink menu, and more. The app provides detailed information about each pub, including reviews and ratings from other users."
+      },
+      {
+        "image": "",
+        "text": "I am building this application just because I want to, and I love pubs, especially drinking with colleagues and friends."
+      }
+    ],
     "skills": ["React Native", "Typescript", "Firebase", "GCP"],
     "contribution": [
       "1인 개발",

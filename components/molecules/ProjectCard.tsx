@@ -57,20 +57,30 @@ export default function ProjectCard({ project }: ProjectCard) {
 
         {/* 제목, 기간 */}
         <div className="flex flex-col">
-          <div className="font-suitBold text-sm sm:text-size-subtitle text-white z-10 leading-tight">
+          <div className="font-suitBold text-sm sm:text-size-subtitle z-10 leading-tight text-color-highlight">
             {project.title}
           </div>
           <div className="mt-2">
-            <div className="font-suitBold text-xs sm:text-size-body text-white text-opacity-80">
+            <div className="font-suitBold sm:text-size-body text-color-secondary text-opacity-80">
               {project.organization}
             </div>
-            <div className="font-suitBold text-xs sm:text-size-body text-white text-opacity-80">{`${project.time.from.year}.${project.time.from.month} - ${project.time.until.year}.${project.time.until.month}`}</div>
+            <div className="font-suitBold sm:text-size-body text-color-secondary text-opacity-80">
+              {`${project.time.from.year}.${String(
+                project.time.from.month
+              ).padStart(2, "0")} - ${
+                project.time.until.now
+                  ? "현재"
+                  : `${project.time.until.year}.${String(
+                      project.time.until.month
+                    ).padStart(2, "0")}`
+              }`}
+            </div>
           </div>
         </div>
 
         {/* 설명 */}
         <div
-          className="font-suitBold text-xs sm:text-size-body text-white text-opacity-70 flex-1"
+          className="text-size-body sm:text-size-body text-color-main text-opacity-70 flex-1"
           style={{
             display: "-webkit-box",
             WebkitLineClamp: 3,

@@ -23,7 +23,7 @@
         "day": 30
       }
     },
-    "description": "대학원에서 진행한 논문 연구입니다. 텍스트를 두가지 특징으로 나누어 각각의 특징추출기를 통해 특징을 추출하고 벡터들을 concat하고 다시 dense layer를 통해 문장을 파악하는 구조의 알고리즘을 제안하였습니다.\n텍스트를 기존과 같은 방식의 임베딩을 통해 벡터화된 특징을 LSTM 추출기를 통하여 해석하는 방법과, 텍스트를 이미지화 하여 글자가 위치한 픽셀 위치를 나타내는 인덱스를 좌표로 활용하여 MLP를 통해 추출한 특징 데이터 두가지를 활용하였습니다. 기존 LSTM은 두개의 테스트 데이터셋에 대한 실험 결과 각각 86.85%, 그리고 82.51% F1-score를 나타냈고, 제안 모델인 LSTM-MLP는 각각 88.13%, 85.98%의 F1-score를 보였습니다.",
+    "description": "I proposed a model that extracts features using two differenct feature extractors, concatenates the vectors, and then understands the sentences through a dense layer.\nI used two types of feature data: one is the feature vectorized through embedding in the traditional way and interpreted through an LSTM extractor, and the other is the feature extracted through MLP by utilizing the index representing the pixel position where the text is located as coordinates by converting the text into an image.",
     "descriptionPartial": [
       {
         "image": "projectImages/thesis/thesis2.png",
@@ -40,11 +40,11 @@
   },
   {
     "id": 5,
-    "title": "LangChain",
+    "title": "RAG LLM Automation",
     "subtitle": "",
-    "category": "인공지능",
-    "thumbnail": [],
-    "organization": "이지팜",
+    "category": "AI",
+    "thumbnail": ["projectImages/ezfarm/ezfarm1.png"],
+    "organization": "Ezfarm Inc.",
     "time": {
       "from": {
         "year": 2024,
@@ -52,14 +52,31 @@
         "day": 7
       },
       "until": {
-        "now": true,
+        "now": false,
         "year": 2025,
-        "month": 1,
-        "day": 6
+        "month": 2,
+        "day": 25
       }
     },
-    "description": "LangChain을 활용하여 LLM 자동화를 구축하고 있습니다. 자연어 처리 입력으로 실제 존재하는 데이터를 기반으로 하여 답변을 하는 RAG 모델을 구축하였고, DB로부터 데이터를 가져올 수 있도록 하는 자동화 LLM 모델 또한 구축하고 있습니다.",
-    "descriptionPartial": [{ "image": "", "text": "" }],
+    "description": "Built a LLM automation using LangChain.Developed a RAG model that answers based on real existing data with natural language processing input, and also built an automated LLM model that can retrieve data from the database.",
+    "descriptionPartial": [
+      {
+        "image": null,
+        "text": "Built a LLM automation using LangChain. Developed a RAG model that answers based on real existing data with natural language processing input, and also built an automated LLM model that can retrieve data from the database."
+      },
+      {
+        "image": null,
+        "text": "LangChain was quite new to the world, so I learned it from scratch. I even built a memory system in the RAG automation pipeline manually, by feeding several conversation threads into the model. "
+      },
+      {
+        "image": null,
+        "text": "I not only built the RAG model, but also created an automated LLM model that can retrieve data from the database. This involved setting up the necessary infrastructure and ensuring seamless integration with existing systems. In these days it is called Text-to-SQL model."
+      },
+      {
+        "image": null,
+        "text": "It had a little problem in the model's accuracy, showing the phenomenon so called hallucination. General prompting not have seemed to be the solution, so I took a chance to implement a Named Entity Recognition (NER) method to improve the accuracy of the LLM model. By recognizing and extracting specific entities from the input text, the NER data helped to provide more structured and relevant information to the LLM, thereby reducing hallucination by 50-60% and improving overall performance."
+      }
+    ],
     "skills": ["Langchain", "Typescript"],
     "contribution": ["RAG LLM 모델 구축", "자동화 LLM 모델 구축"],
     "url": ""
@@ -68,7 +85,7 @@
     "id": 4,
     "title": "Pubty",
     "subtitle": "",
-    "category": "모바일 앱",
+    "category": "MobileApp",
     "thumbnail": [
       "projectImages/pubty/pubty1.svg",
       "projectImages/pubty/pubty2.svg",
@@ -101,7 +118,7 @@
     "id": 3,
     "title": "OpenFrame Refactor",
     "subtitle": "",
-    "category": "웹서비스",
+    "category": "Web",
     "thumbnail": [
       "projectImages/openFrameRefactor/openFrameRefactor1.png",
       "projectImages/openFrameRefactor/openFrameRefactor2.png"
@@ -133,7 +150,7 @@
     "id": 2,
     "title": "DatasetManager",
     "subtitle": "",
-    "category": "웹서비스",
+    "category": "Web",
     "thumbnail": [],
     "organization": "티맥스소프트",
     "time": {

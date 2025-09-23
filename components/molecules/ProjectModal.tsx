@@ -130,8 +130,6 @@ export default function ProjectModal({
                     ? "현재"
                     : `${project.time.until.year}.${String(
                         project.time.until.month
-                      ).padStart(2, "0")}.${String(
-                        project.time.until.day
                       ).padStart(2, "0")}`
                 }`}
               </div>
@@ -146,7 +144,7 @@ export default function ProjectModal({
             {project.descriptionPartial &&
             project.descriptionPartial.length > 0 ? (
               project.descriptionPartial.map((part, index) => (
-                <div key={index} className="mb-14">
+                <div key={index} className="">
                   <div className="font-suitBold text-size-body text-color-main leading-relaxed whitespace-pre-line mb-4">
                     {part.text}
                   </div>
@@ -156,7 +154,7 @@ export default function ProjectModal({
                       height={200}
                       src={`/${part.image}`}
                       alt={`project part ${index + 1}`}
-                      className="w-3/4 h-auto object-cover object-top rounded-lg mb-2 mx-auto"
+                      className="w-3/4 h-auto object-cover object-top rounded-lg mb-14 mx-auto"
                     />
                   )}
                 </div>

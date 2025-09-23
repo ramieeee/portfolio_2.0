@@ -24,7 +24,7 @@
       "paper": [
         "이미지화된 텍스트의 픽셀 위치 좌표와 벡터 특징을 활용한 LSTM-MLP 기반 한글 혐오 표현 탐지"
       ],
-      "description": "혐오 표현 탐지에 관한 주제로 논문 연구를 진행 하였습니다. 텍스트를 이미지화한 특징과 벡터화한 특징으로 멀티모달리티를 활용하여 LSTM-MLP 모델을 학습하여 혐오 표현 탐지 모델을 구축하였습니다."
+      "description": "Conducted research on hate speech detection. Utilized multimodality by leveraging image-based features and vectorized features to train an LSTM-MLP model for hate speech detection."
     }
   },
   {
@@ -49,7 +49,7 @@
       "status": "Graduated",
       "major": "English",
       "skills": "",
-      "description": "영어학과 3학년 편입 후 졸업"
+      "description": "Studied English language and literature, focusing on enhancing communication skills and cultural understanding."
     }
   }
 ]

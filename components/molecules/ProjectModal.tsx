@@ -116,10 +116,10 @@ export default function ProjectModal({
               </div>
             )}
             <div className="flex flex-col gap-2">
-              <div className="font-suitBold text-sm sm:text-size-body text-color-secondary">
+              <div className="text-sm sm:text-size-body text-color-secondary">
                 {project.organization} | {project.category}
               </div>
-              <div className="font-suitBold text-sm sm:text-size-body text-color-secondary">
+              <div className="text-sm sm:text-size-body text-color-secondary">
                 {`${project.time.from.year}.${String(
                   project.time.from.month
                 ).padStart(2, "0")}.${String(project.time.from.day).padStart(
@@ -145,7 +145,7 @@ export default function ProjectModal({
             project.descriptionPartial.length > 0 ? (
               project.descriptionPartial.map((part, index) => (
                 <div key={index} className="">
-                  <div className="font-suitBold text-size-body text-color-main leading-relaxed whitespace-pre-line mb-4">
+                  <div className="text-size-body text-color-main leading-relaxed whitespace-pre-line mb-4">
                     {part.text}
                   </div>
                   {part.image && (
@@ -170,10 +170,12 @@ export default function ProjectModal({
           {project.contribution && (
             <div className="mb-6">
               <div className="font-suitBold text-size-body text-color-highlight mb-3">
-                {"기여도"}
+                {"Contribution"}
               </div>
-              <div className="font-suitBold text-size-body text-color-main leading-relaxed">
-                {project.contribution}
+              <div className="flex flex-col gap-2 text-size-body text-color-main leading-relaxed">
+                {project.contribution.map((item, index) => {
+                  return <div key={index}>{`✶ ${item}`}</div>;
+                })}
               </div>
             </div>
           )}
@@ -182,7 +184,7 @@ export default function ProjectModal({
           {project.skills && project.skills.length > 0 && (
             <div className="mb-6">
               <div className="font-suitBold text-size-body text-color-highlight mb-3">
-                {"기술 스택"}
+                {"Skills"}
               </div>
               <div className="flex flex-wrap gap-2">
                 {project.skills.map((skill, index) => (

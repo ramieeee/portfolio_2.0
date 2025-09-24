@@ -122,10 +122,7 @@ export default function ProjectModal({
               <div className="font-suitBold text-sm sm:text-size-body text-color-secondary">
                 {`${project.time.from.year}.${String(
                   project.time.from.month
-                ).padStart(2, "0")}.${String(project.time.from.day).padStart(
-                  2,
-                  "0"
-                )} - ${
+                ).padStart(2, "0")} - ${
                   project.time.until.now
                     ? "현재"
                     : `${project.time.until.year}.${String(
@@ -203,7 +200,7 @@ export default function ProjectModal({
           {project.url && (
             <div className="mb-6">
               <div className="font-suitBold text-size-body text-color-highlight mb-3">
-                링크
+                {"URL"}
               </div>
               <a
                 href={project.url}

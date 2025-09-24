@@ -142,7 +142,7 @@
       "projectImages/openFrameRefactor/openFrameRefactor1.png",
       "projectImages/openFrameRefactor/openFrameRefactor2.png"
     ],
-    "organization": "티맥스소프트",
+    "organization": "TmaxSoft",
     "time": {
       "from": {
         "year": 2024,
@@ -156,12 +156,17 @@
         "day": 1
       }
     },
-    "description": "티맥스소프트 재직중 솔루선의 SaaS화를 위해 진행된 프로젝트입니다. 해당 프로젝트에서 UI 개발을 담당하였습니다. Portal과 Console의 프론트엔드 개발을 담당하였습니다.",
-    "descriptionPartial": [{ "image": "", "text": "" }],
+    "description": "It was a project aimed at SaaS-ifying the solution while working at TmaxSoft. I was responsible for UI development in this project, specifically for the frontend development of the Portal and Console.",
+    "descriptionPartial": [
+      {
+        "image": "",
+        "text": "It was a project aimed at SaaS-ifying the solution while working at TmaxSoft. I was responsible for UI development in this project, specifically for the frontend development of the Portal and Console."
+      }
+    ],
     "skills": ["React", "Typescript"],
     "contribution": [
-      "Saas Portal의 디자인 기획 및 Figma 구현",
-      "Portal과 Console 페이지의 UI개발 및 컴포넌트 개발"
+      "SaaS Portal designing and planning with Figma",
+      "UI development and component development for the Portal and Console pages"
     ],
     "url": ""
   },
@@ -171,7 +176,7 @@
     "subtitle": "",
     "category": "Web",
     "thumbnail": [],
-    "organization": "티맥스소프트",
+    "organization": "TmaxSoft",
     "time": {
       "from": {
         "year": 2022,
@@ -185,12 +190,17 @@
         "day": 1
       }
     },
-    "description": "Mainframe의 Dataset에 대응하여 open환경에서 Dataset을 관리하도록 도와주는 제품의 프론트를 개발 하였습니다.",
-    "descriptionPartial": [{ "image": "", "text": "" }],
+    "description": "I developed the frontend of a product that helps manage datasets in an open environment corresponding to the Mainframe's dataset.",
+    "descriptionPartial": [
+      {
+        "image": "",
+        "text": "I developed the frontend of a product that helps manage datasets in an open environment corresponding to the Mainframe's dataset."
+      }
+    ],
     "skills": ["React", "Typescript", "Nextjs", "React-query", "Docker"],
     "contribution": [
-      "Saas Portal의 디자인 기획 및 Figma 구현",
-      "Portal과 Console 페이지의 UI개발 및 컴포넌트 개발"
+      "Mainly focused on building reusable components and UI elements, which reduced development time for new pages by 30%",
+      "Pioneered to adopt Next.js and React-query, spreading know-how to the team"
     ],
     "url": ""
   }

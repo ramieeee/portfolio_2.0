@@ -142,18 +142,18 @@ export default function ProjectModal({
             project.descriptionPartial.length > 0 ? (
               project.descriptionPartial.map((part, index) => (
                 <div key={index} className="">
-                  <div className="font-suitBold text-size-body text-color-main leading-relaxed whitespace-pre-line mb-4">
-                    {part.text}
-                  </div>
                   {part.image && (
                     <Image
                       width={400}
                       height={200}
                       src={`/${part.image}`}
                       alt={`project part ${index + 1}`}
-                      className="w-3/4 h-auto object-cover object-top rounded-lg mb-14 mx-auto"
+                      className="w-3/4 h-auto object-cover object-top rounded-lg mb-4 mx-auto"
                     />
                   )}
+                  <div className="font-suitBold text-size-body text-color-main leading-relaxed whitespace-pre-line mb-4">
+                    {part.text}
+                  </div>
                 </div>
               ))
             ) : (

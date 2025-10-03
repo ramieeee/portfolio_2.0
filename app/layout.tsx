@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
+import { GoogleAnalytics } from "@next/third-parties/google";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -28,6 +29,7 @@ export default function RootLayout({
       <body className={`${suit.variable} ${suitBold.variable}`}>
         {children}
       </body>
+      <GoogleAnalytics gaId="G-7KQCMJP4ZP" />
     </html>
   );
 }
